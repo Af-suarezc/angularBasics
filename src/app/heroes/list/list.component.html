@@ -1,0 +1,12 @@
+<h1>Listado de favs </h1>
+<ul>
+  <li *ngFor="let hero of heroes; let i=index">  {{hero}}</li>
+</ul>
+
+<button (click)="borrarHeroe()">Del ramdon</button>
+
+<h2 *ngIf="deleted.length > 0; else noDeleted ">The deleted here is {{deleted}}</h2>
+
+<ng-template #noDeleted>
+  <h2>No deleted yet</h2>
+</ng-template>
