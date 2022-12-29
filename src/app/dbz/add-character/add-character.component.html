@@ -1,0 +1,9 @@
+<div class="col">
+  <h3>Add Char</h3>
+  <hr />
+  <form (ngSubmit)="addHero()">
+    <input type="text" placeholder="Name" name ="name" [(ngModel)]="newData.name">
+    <input type="number" placeholder="Power" name ="power" [(ngModel)]="newData.power" >
+    <button>Add</button>
+  </form>
+</div>

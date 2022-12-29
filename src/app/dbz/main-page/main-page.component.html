@@ -1,0 +1,16 @@
+<h1>DBZ WORKS!</h1>
+<hr />
+
+<div class="row">
+  <div class="col">
+    <app-characters>
+    </app-characters>
+    <!-- Agregar en app-character como comunicación con el componente hijo [warriorsZ] ="warriors" -->
+  </div>
+  <div class="col">
+    <app-add-character
+    [newData]="newCharacter"
+    ></app-add-character>
+  </div>
+
+</div>

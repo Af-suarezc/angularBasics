@@ -1,0 +1,7 @@
+<h3>Characters</h3>
+<hr />
+<ul>
+  <li *ngFor="let warrior of warriors; let i = index">
+    {{ warrior.name }} power of {{ warrior.power | number }} units
+  </li>
+</ul>
